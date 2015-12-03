@@ -1,32 +1,34 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#
+# Download and place this file into your git repository. 
+# Rename it to '.gitignore' (without quotes)
+#
+# wget http://www.phys.uconn.edu/phys2200/downloads/gitignore.sample
+# mv gitignore.sample .gitignore
+#
+# or
+#
+# wget http://www.phys.uconn.edu/phys2200/downloads/gitignore.sample -O .gitignore
+#
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore all
+*
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Unignore files with extensions .c and .h
+!*.c
+!*.h
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Unignore all dirs
+!*/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Unignore makefiles
+!Makefile
+!makefile
 
-# Debug files
-*.dSYM/
+# Unignore .gitignore
+!.gitignore
+
+# Unignore .indent.pro
+!.indent.pro
+
+# Unignore markdown files
+!*.md
